@@ -1,11 +1,12 @@
-import React from 'react'
+"use client";
+import { userSelector } from "@/store/slices/userSlice";
+import React from "react";
+import { useSelector } from "react-redux";
 
-type Props = {}
-
+type Props = {};
 const SignIn = (props: Props) => {
-  return (
-    <div>SignIn</div>
-  )
-}
+//   const reducer = useSelector(userSelector);
+  return <div>SignIn</div>;
+};
 
-export default SignIn
+export default SignIn;
