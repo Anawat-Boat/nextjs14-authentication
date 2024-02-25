@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ReduxProvider from "@/component/common/ReduxProvider";
-
+// import AuthProvider from "./_components/common/AuthProvider";
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,9 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ReduxProvider>
-          {children}
-        </ReduxProvider>
+        {/* <AuthProvider> */}
+          <ReduxProvider>
+            <AntdRegistry>
+            {children}
+            </AntdRegistry>
+          </ReduxProvider>
+        {/* </AuthProvider> */}
       </body>
     </html>
   );

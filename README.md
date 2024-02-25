@@ -39,3 +39,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
  ```bash
 ืnpm install @reduxjs/toolkit react-redux next-redux-wrapper
 ```
+
+## Install AntDesign
+ ```bash
+npm install antd @ant-design/nextjs-registry --save
+
+```
